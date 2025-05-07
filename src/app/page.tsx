@@ -1,9 +1,9 @@
 import Navbar from "@/components/Navbar"
 export default function Home() {
   return (
-    <div >
-      <Navbar />
-      <div className="mt-30 ">
+    <div className="bg-pizarra h-full mt-28">
+      <Navbar /> {/*Ignorar esto*/}
+      <div >
         fortnite
       </div>
     </div>
