@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@layer components {
+  .nav-text {
+    @apply text-2xl text-gray-200 text-shadow-sky-200 transition-all duration-300 hover:scale-105 hover:ease-in-out
+    hover:text-sky-400;
+  }
+}
+
