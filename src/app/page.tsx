@@ -1,9 +1,9 @@
 import Navbar from "@/components/Navbar"
 export default function Home() {
   return (
-    <div className="bg-pizarra">
+    <div >
       <Navbar />
-      <div>
+      <div className="mt-30 ">
         fortnite
       </div>
     </div>
