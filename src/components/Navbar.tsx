@@ -3,7 +3,7 @@ import "@/styles/Navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 left-0 right-0 w-full backdrop-blur-md bg-pizarra/80 bg-linear-to-b from-black/20 to-pizarra">
+    <div className="fixed top-0 left-0 right-0 w-full backdrop-blur-xs bg-pizarra/80 ">
       <div className="flex w-4/5 mx-auto items-center justify-between p-4 rounded-2xl ">
         <Image
           id="image"

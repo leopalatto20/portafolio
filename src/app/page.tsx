@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import Intcard from "@/components/Intcard";
+import Project from "@/components/Project";
+import Tech from "@/components/Tech";
 export default function Home() {
   return (
     <div className="bg-pizarra h-full ">
       <Navbar /> {/*Ignorar esto*/}
       <Sidebar />
-      <main className="flex min-h-screen min-w-full flex-col items-center justify-center">
+      <main className="flex min-h-screen min-w-full flex-col items-center justify-center mt-32">
         <section
           id="about"
           className="text-center grid md:grid-cols-2 grid-cols-1 items-center w-3/4 "
@@ -59,13 +60,26 @@ export default function Home() {
               Tecnologias con las que trabajo normalmente.
             </p>
           </div>
+          <div className="flex flex-wrap gap-4 mx-auto">
+            <Tech />
+            <Tech />
+            <Tech />
+            <Tech />
+            <Tech />
+          </div>
         </section>
         <section className="relative flex min-w-full flex-col items-center gap-4">
           <div className="text-center">
-            <p className="text-4xl text-bold text-gray-300">Mis proyectos</p>
-            <p className="p-3 text-2xl text-gray-300">
+            <p className="text-4xl text-bold text-white">Mis proyectos</p>
+            <p className="p-3 text-2xl text-melon">
               Algunos de mis proyectos favoritos en los que he trabajado.
             </p>
+          </div>
+          <div className="w-4/5 grid grid-cols-2 gap-10 p-4 mx-10">
+            <Project />
+            <Project />
+            <Project />
+            <Project />
           </div>
         </section>
       </main>
