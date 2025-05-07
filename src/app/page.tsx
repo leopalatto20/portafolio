@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import Intcard from "@/components/Intcard";
 export default function Home() {
   return (
     <div className="bg-pizarra h-full ">
@@ -31,7 +32,7 @@ export default function Home() {
               soluciones con aplicaciones reales.
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-end">
             <div className="w-3/4 h-80 relative">
               <Image
                 src="/images.png"
@@ -49,6 +50,22 @@ export default function Home() {
                 Curriculum Vitae
               </a>
             </button>
+          </div>
+        </section>
+        <section className="relative flex min-w-full flex-col items-center gap-4">
+          <div className="text-center">
+            <p className="text-4xl text-bold text-white">Mi tech stack</p>
+            <p className="p-3 text-2xl text-melon">
+              Tecnologias con las que trabajo normalmente.
+            </p>
+          </div>
+        </section>
+        <section className="relative flex min-w-full flex-col items-center gap-4">
+          <div className="text-center">
+            <p className="text-4xl text-bold text-gray-300">Mis proyectos</p>
+            <p className="p-3 text-2xl text-gray-300">
+              Algunos de mis proyectos favoritos en los que he trabajado.
+            </p>
           </div>
         </section>
       </main>

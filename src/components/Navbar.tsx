@@ -14,16 +14,16 @@ export default function Navbar() {
           className="rounded-full"
         />
         <nav id="navbar" className="flex gap-5">
-          <a className="nav-text" href="#about">
+          <a className="nav-text text-miel hover:text-azul-sec" href="#about">
             Sobre mi
           </a>
-          <a className="nav-text" href="#about">
+          <a className="nav-text text-miel hover:text-azul-sec" href="#about">
             Tech stack
           </a>
-          <a className="nav-text" href="#about">
+          <a className="nav-text text-miel hover:text-azul-sec" href="#about">
             Proyectos
           </a>
-          <a className="nav-text" href="#about">
+          <a className="nav-text text-miel hover:text-azul-sec" href="#about">
             Contacto
           </a>
         </nav>

@@ -2,7 +2,6 @@
 
 @layer components {
   .nav-text {
-    @apply text-2xl text-sky-100 transition-all duration-300 hover:scale-105 hover:ease-in-out
-    hover:text-sky-400;
+    @apply text-2xl transition-all duration-300 hover:scale-105 hover:ease-in-out;
   }
 }
