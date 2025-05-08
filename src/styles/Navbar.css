@@ -4,4 +4,21 @@
   .nav-text {
     @apply text-2xl transition-all duration-300 hover:scale-105 hover:ease-in-out;
   }
+  .dropdown-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  .dropdown-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 300ms ease;
+  }
+  .dropdown-exit {
+    opacity: 1;
+  }
+  .dropdown-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 300ms ease;
+  }
 }

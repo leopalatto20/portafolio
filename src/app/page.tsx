@@ -102,7 +102,7 @@ export default function Home() {
               Algunos de mis proyectos favoritos en los que he trabajado.
             </p>
           </div>
-          <div className="w-3/5 grid grid-cols-2 gap-10 p-4 mx-10">
+          <div className="w-3/5 grid md:grid-cols-2 grid-cols-1 gap-10 p-4 mx-10">
             <Project
               image="/evergreen.jpg"
               title="Evergreen"
@@ -120,14 +120,21 @@ export default function Home() {
               y generando recomendaciones mediante ese resultado. "
             />
             <Project
-              image="/googlecloud.png"
+              image="/operacion.png"
               title="Operacion escape"
-              text="fortnite"
+              link="https://github.com/leopalatto20/OperacionEscape.git"
+              text="Operacion escape es un sistema de informacion desarrollado para una escuela local,
+              el cual tiene un videojuego educativo para reforzar conocimientos de matematicas en los alumnos
+              , el cual envia los resultados a un dashboard para que el el maestro pueda ver el progreso de sus alumnos
+              y tomar decisiones a partir de los datos mostrados."
             />
             <Project
-              image="/googlecloud.png"
-              title="Operacion escape"
-              text="fortnite"
+              image="/dand.png"
+              title="Dungeons & Dragons"
+              link="https://github.com/leopalatto20/Dungeons_And_Dragons.git"
+              text="Este juego es mi proyecto de estructuras de datos y algoritmos fundamentales, es un juego
+              de Dungeons & Dragons basado en texto, completamente funcional y jugable, usando principios como
+              lectura de archivos y programacion orientada a objetos para tener un codigo escalable y mantenible."
             />
           </div>
         </section>

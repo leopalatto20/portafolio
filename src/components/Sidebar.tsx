@@ -1,6 +1,6 @@
 export default function Sidebar() {
   return (
-    <aside className="fixed left-0 top-1/2 -translate-y-1/2 pl-2 pr-3 py-5 bg-black rounded-r-4xl z-50">
+    <aside className="fixed left-0 top-1/2 -translate-y-1/2 pl-2 pr-3 py-5 bg-black rounded-r-4xl z-50 hidden md:flex">
       <div className="flex flex-col gap-5">
         <a
           href="https://www.linkedin.com/in/leonardo-p%C3%A9rez-palatto-05b86030b/"
