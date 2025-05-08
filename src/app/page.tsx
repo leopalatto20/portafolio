@@ -34,7 +34,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center md:items-end">
-            <div className="md:w-3/4 w-full h-80 relative">
+            <div className="md:w-3/4 w-0 md:h-80 sm:h-0 relative">
               <Image
                 src="/images.png"
                 alt="mifoto"
