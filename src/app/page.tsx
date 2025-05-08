@@ -107,34 +107,25 @@ export default function Home() {
               image="/evergreen.jpg"
               title="Evergreen"
               link="https://devpost.com/software/ever-green-qt89uf"
-              text="Evergreen fue el proyecto con el que gané el primer hackaton al 
-              que fui. Este proyecto tiene como objetivo facilitar el proceso de plantar un arbol para cualquier persona."
+              text="Evergreen fue el proyecto con el que gané mi primer hackatón. Su objetivo es facilitar el proceso de plantar un árbol para cualquier persona."
             />
             <Project
               image="/identifeye.jpg"
               title="Identifeye"
               link="https://github.com/han-lovers/IdentifEye"
-              text="Identifeye es el proyecto con el cual gané mi segundo hackaton. 
-              Se implementó una busqueda mediante embeddings en un catalogo con más de 
-              70,000 imagenes, permitiendonos encontrar el producto buscado con una imagen 
-              y generando recomendaciones mediante ese resultado. "
+              text="Identifeye es el proyecto con el que gané mi segundo hackatón. Implementamos una búsqueda mediante *embeddings* en un catálogo con más de 70,000 imágenes, lo que permite encontrar un producto a partir de una foto y generar recomendaciones basadas en el resultado."
             />
             <Project
               image="/operacion.png"
               title="Operacion escape"
               link="https://github.com/leopalatto20/OperacionEscape.git"
-              text="Operacion escape es un sistema de informacion desarrollado para una escuela local,
-              el cual tiene un videojuego educativo para reforzar conocimientos de matematicas en los alumnos
-              , el cual envia los resultados a un dashboard para que el el maestro pueda ver el progreso de sus alumnos
-              y tomar decisiones a partir de los datos mostrados."
+              text="Operación Escape es un sistema de información desarrollado para una escuela local. Incluye un videojuego educativo que refuerza conocimientos de matemáticas en los alumnos y envía los resultados a un panel para que el maestro pueda monitorear el progreso y tomar decisiones basadas en los datos."
             />
             <Project
               image="/dand.png"
               title="Dungeons & Dragons"
               link="https://github.com/leopalatto20/Dungeons_And_Dragons.git"
-              text="Este juego es mi proyecto de estructuras de datos y algoritmos fundamentales, es un juego
-              de Dungeons & Dragons basado en texto, completamente funcional y jugable, usando principios como
-              lectura de archivos y programacion orientada a objetos para tener un codigo escalable y mantenible."
+              text="Este juego es mi proyecto de estructuras de datos y algoritmos fundamentales. Es una versión de Dungeons & Dragons basada en texto, completamente funcional y jugable, utilizando principios como la lectura de archivos y la programación orientada a objetos para lograr un código escalable y mantenible."
             />
           </div>
         </section>
