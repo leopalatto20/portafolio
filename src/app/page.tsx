@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex min-h-screen min-w-full flex-col items-center justify-center">
         <section
           id="about"
-          className="min-h-screen gap-4 py-32 lg:py-0 md:py-20 text-center grid md:grid-cols-2 grid-cols-1 items-center w-full md:w-3/4 px-4 "
+          className="min-h-screen gap-4 py-32 lg:py-20 md:py-20 text-center grid md:grid-cols-2 grid-cols-1 items-center w-full md:w-3/4 px-4 "
         >
           <div className="flex flex-col items-start">
             <h1 className="text-3xl">Hola, soy</h1>
