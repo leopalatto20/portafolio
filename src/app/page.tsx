@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex min-h-screen min-w-full flex-col items-center justify-center">
         <section
           id="about"
-          className="h-screen text-center grid md:grid-cols-2 grid-cols-1 items-center w-3/4 "
+          className="min-h-screen py-32 md:py-0 text-center grid md:grid-cols-2 grid-cols-1 items-center w-full md:w-3/4 px-4 "
         >
           <div className="flex flex-col items-start">
             <h1 className="text-3xl">Hola, soy</h1>
@@ -33,7 +33,7 @@ export default function Home() {
               soluciones con aplicaciones reales.
             </p>
           </div>
-          <div className="flex flex-col items-end">
+          <div className="flex flex-col items-center md:items-end">
             <div className="w-3/4 h-80 relative">
               <Image
                 src="/images.png"
