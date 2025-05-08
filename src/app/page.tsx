@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex min-h-screen min-w-full flex-col items-center justify-center">
         <section
           id="about"
-          className="min-h-screen py-32 md:py-0 text-center grid md:grid-cols-2 grid-cols-1 items-center w-full md:w-3/4 px-4 "
+          className="min-h-screen gap-4 py-32 md:py-0 text-center grid md:grid-cols-2 grid-cols-1 items-center w-full md:w-3/4 px-4 "
         >
           <div className="flex flex-col items-start">
             <h1 className="text-3xl">Hola, soy</h1>
@@ -34,7 +34,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center md:items-end">
-            <div className="w-3/4 h-80 relative">
+            <div className="md:w-3/4 w-full h-80 relative">
               <Image
                 src="/images.png"
                 alt="mifoto"
@@ -55,7 +55,7 @@ export default function Home() {
         </section>
         <section
           id="stack"
-          className="relative flex min-w-full flex-col items-center gap-4 h-screen scroll-mt-36"
+          className="relative flex min-h-screen w-full flex-col items-center gap-4 py-20 md:py-0 scroll-mt-36 px-4"
         >
           <div className="text-center">
             <p className="text-4xl text-bold text-white">Mi tech stack</p>
@@ -94,7 +94,7 @@ export default function Home() {
         </section>
         <section
           id="proyectos"
-          className="relative flex min-w-full flex-col items-center gap-4 h-screen scroll-mt-36"
+          className="relative flex min-h-screen w-full flex-col items-center gap-4 py-20 md:py-0 scroll-mt-36 px-4 pb-24"
         >
           <div className="text-center">
             <p className="text-4xl text-bold text-white">Mis proyectos</p>
@@ -102,7 +102,7 @@ export default function Home() {
               Algunos de mis proyectos favoritos en los que he trabajado.
             </p>
           </div>
-          <div className="w-3/5 grid md:grid-cols-2 grid-cols-1 gap-10 p-4 mx-10">
+          <div className="md:w-3/5 w-full grid md:grid-cols-2 grid-cols-1 gap-10 p-4 mx-10">
             <Project
               image="/evergreen.jpg"
               title="Evergreen"
@@ -136,6 +136,121 @@ export default function Home() {
               de Dungeons & Dragons basado en texto, completamente funcional y jugable, usando principios como
               lectura de archivos y programacion orientada a objetos para tener un codigo escalable y mantenible."
             />
+          </div>
+        </section>
+        <section
+          id="contacto"
+          className="relative w-full flex flex-col items-center justify-center py-20 scroll-mt-36 px-4 min-h-[80vh]"
+        >
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-white mb-4">Contáctame</h2>
+          </div>
+          <div className="w-full max-w-4xl grid md:grid-cols-2 grid-cols-1 gap-12">
+            <div className="flex flex-col items-center space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="bg-miel/10 p-3 rounded-full">
+                  <svg
+                    className="w-6 h-6 text-miel"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">
+                    Correo electrónico
+                  </h3>
+                  <a
+                    href="mailto:leopalatto20@gmail.com"
+                    className="text-gray-300 hover:text-miel transition-colors"
+                  >
+                    leopalatto20@gmail.com
+                  </a>
+                  <a
+                    href="mailto:A01665462@tec.mx"
+                    className="block text-gray-300 hover:text-miel transition-colors"
+                  >
+                    A01665462@tec.mx
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="bg-miel/10 p-3 rounded-full">
+                  <svg
+                    className="w-6 h-6 text-miel"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Teléfono</h3>
+                  <a
+                    href="tel:+525627452472"
+                    className="text-gray-300 hover:text-miel transition-colors"
+                  >
+                    +52 56 2745 2472
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Redes sociales */}
+            <div className="flex flex-col items-center space-y-8">
+              <h3 className="text-xl font-semibold text-white text-center md:text-left">
+                Mis redes sociales
+              </h3>
+              <div className="flex space-x-6">
+                <a
+                  href="https://www.linkedin.com/in/leonardo-p%C3%A9rez-palatto-05b86030b/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 hover:bg-blue-600 transition-all duration-300 p-4 rounded-lg flex items-center justify-center"
+                  aria-label="LinkedIn"
+                >
+                  <img
+                    className="w-8 h-8 object-contain"
+                    src="/linkedin.png"
+                    alt="LinkedIn"
+                  />
+                  <span className="ml-2 text-white hidden md:inline">
+                    LinkedIn
+                  </span>
+                </a>
+
+                <a
+                  href="https://github.com/leopalatto20"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 hover:bg-gray-700 transition-all duration-300 p-4 rounded-lg flex items-center justify-center"
+                  aria-label="GitHub"
+                >
+                  <img
+                    className="w-8 h-8 object-contain"
+                    src="/github.png"
+                    alt="GitHub"
+                  />
+                  <span className="ml-2 text-white hidden md:inline">
+                    GitHub
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>

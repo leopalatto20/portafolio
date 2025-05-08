@@ -60,7 +60,10 @@ export default function Navbar() {
           >
             Proyectos
           </a>
-          <a className="nav-text text-miel hover:text-azul-sec" href="#about">
+          <a
+            className="nav-text text-miel hover:text-azul-sec"
+            href="#contacto"
+          >
             Contacto
           </a>
         </nav>
@@ -92,7 +95,7 @@ export default function Navbar() {
             </a>
             <a
               className="nav-text text-miel hover:text-azul-sec w-full text-center py-2"
-              href="#about"
+              href="#contacto"
               onClick={() => setIsOpen(false)}
             >
               Contacto
