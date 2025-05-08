@@ -102,7 +102,7 @@ export default function Home() {
               Algunos de mis proyectos favoritos en los que he trabajado.
             </p>
           </div>
-          <div className="md:w-3/5 w-full grid md:grid-cols-2 grid-cols-1 gap-10 p-4 mx-10">
+          <div className="md:w-3/5 w-full grid md:grid-cols-2 grid-cols-1 gap-10 p-4 mx-auto justify-items-center ">
             <Project
               image="/evergreen.jpg"
               title="Evergreen"
