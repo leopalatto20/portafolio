@@ -20,7 +20,10 @@ export default function Navbar() {
           <a className="nav-text text-miel hover:text-azul-sec" href="#stack">
             Tech stack
           </a>
-          <a className="nav-text text-miel hover:text-azul-sec" href="#about">
+          <a
+            className="nav-text text-miel hover:text-azul-sec"
+            href="#proyectos"
+          >
             Proyectos
           </a>
           <a className="nav-text text-miel hover:text-azul-sec" href="#about">

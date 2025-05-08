@@ -92,18 +92,43 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="relative flex min-w-full flex-col items-center gap-4">
+        <section
+          id="proyectos"
+          className="relative flex min-w-full flex-col items-center gap-4 h-screen scroll-mt-36"
+        >
           <div className="text-center">
             <p className="text-4xl text-bold text-white">Mis proyectos</p>
-            <p className="p-3 text-2xl text-melon">
+            <p className="p-3 text-3xl text-white">
               Algunos de mis proyectos favoritos en los que he trabajado.
             </p>
           </div>
-          <div className="w-4/5 grid grid-cols-2 gap-10 p-4 mx-10">
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+          <div className="w-3/5 grid grid-cols-2 gap-10 p-4 mx-10">
+            <Project
+              image="/evergreen.jpg"
+              title="Evergreen"
+              link="https://devpost.com/software/ever-green-qt89uf"
+              text="Evergreen fue el proyecto con el que gané el primer hackaton al 
+              que fui. Este proyecto tiene como objetivo facilitar el proceso de plantar un arbol para cualquier persona."
+            />
+            <Project
+              image="/identifeye.jpg"
+              title="Identifeye"
+              link="https://github.com/han-lovers/IdentifEye"
+              text="Identifeye es el proyecto con el cual gané mi segundo hackaton. 
+              Se implementó una busqueda mediante embeddings en un catalogo con más de 
+              70,000 imagenes, permitiendonos encontrar el producto buscado con una imagen 
+              y generando recomendaciones mediante ese resultado. "
+            />
+            <Project
+              image="/googlecloud.png"
+              title="Operacion escape"
+              text="fortnite"
+            />
+            <Project
+              image="/googlecloud.png"
+              title="Operacion escape"
+              text="fortnite"
+            />
           </div>
         </section>
       </main>
