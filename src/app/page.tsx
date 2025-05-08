@@ -8,10 +8,10 @@ export default function Home() {
     <div className="bg-pizarra h-full ">
       <Navbar /> {/*Ignorar esto*/}
       <Sidebar />
-      <main className="flex min-h-screen min-w-full flex-col items-center justify-center mt-32">
+      <main className="flex min-h-screen min-w-full flex-col items-center justify-center">
         <section
           id="about"
-          className="text-center grid md:grid-cols-2 grid-cols-1 items-center w-3/4 "
+          className="h-screen text-center grid md:grid-cols-2 grid-cols-1 items-center w-3/4 "
         >
           <div className="flex flex-col items-start">
             <h1 className="text-3xl">Hola, soy</h1>
@@ -53,19 +53,43 @@ export default function Home() {
             </button>
           </div>
         </section>
-        <section className="relative flex min-w-full flex-col items-center gap-4">
+        <section
+          id="stack"
+          className="relative flex min-w-full flex-col items-center gap-4 h-screen scroll-mt-36"
+        >
           <div className="text-center">
             <p className="text-4xl text-bold text-white">Mi tech stack</p>
-            <p className="p-3 text-2xl text-melon">
+            <p className="p-3 text-3xl text-white">
               Tecnologias con las que trabajo normalmente.
             </p>
           </div>
-          <div className="flex flex-wrap gap-4 mx-auto">
-            <Tech />
-            <Tech />
-            <Tech />
-            <Tech />
-            <Tech />
+          <div className="flex flex-wrap gap-4 mx-auto justify-center">
+            <Tech
+              image="/typescript.png"
+              text="Typescript"
+              textColor="#197ABF"
+            />
+            <Tech
+              image="/javascript.png"
+              text="Javascript"
+              textColor="#E2C209"
+            />
+            <Tech image="/python.png" text="Python" textColor="#0076BC" />
+            <Tech image="/go.png" text="Go" textColor="#73CEDD" />
+            <Tech image="/next.svg" text="Next" />
+            <Tech image="/docker.png" text="Docker" textColor="#28B8EB" />
+            <Tech
+              image="/kubernetes.png"
+              text="Kubernetes"
+              textColor="#2E6DE7"
+            />
+            <Tech image="/aws.png" text="Aws" textColor="#F90" />
+            <Tech image="/vercel.png" text="Vercel" textColor="#FFFFFF" />
+            <Tech
+              image="/googlecloud.png"
+              text="Google Cloud"
+              textColor="#ED422D"
+            />
           </div>
         </section>
         <section className="relative flex min-w-full flex-col items-center gap-4">

@@ -3,7 +3,7 @@ import "@/styles/Navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 left-0 right-0 w-full backdrop-blur-xs bg-pizarra/80 ">
+    <div className="fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-xs bg-pizarra/80 ">
       <div className="flex w-4/5 mx-auto items-center justify-between p-4 rounded-2xl ">
         <Image
           id="image"
@@ -17,7 +17,7 @@ export default function Navbar() {
           <a className="nav-text text-miel hover:text-azul-sec" href="#about">
             Sobre mi
           </a>
-          <a className="nav-text text-miel hover:text-azul-sec" href="#about">
+          <a className="nav-text text-miel hover:text-azul-sec" href="#stack">
             Tech stack
           </a>
           <a className="nav-text text-miel hover:text-azul-sec" href="#about">
