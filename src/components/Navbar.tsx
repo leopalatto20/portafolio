@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="flex w-4/5 mx-auto items-center justify-between p-4 rounded-2xl">
         <Image
           id="image"
-          src="/gato.jpeg"
+          src="/LeoLogo.png"
           alt="fortnite"
           width={75}
           height={75}

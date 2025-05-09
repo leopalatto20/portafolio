@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Home",
   description: "Portafolio desarrollador",
+  icons: {
+    icon: "/LeoLogo.png",
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="LeoLogo.png" sizes="any" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
