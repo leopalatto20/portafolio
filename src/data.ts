@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export const profile = {
     name: "Leonardo Pérez",
     title: "Desarrollador fullstack",
-    cvUrl: "https://drive.google.com/file/d/1gXxdp0Yw2ghNAOAy5P9RDKiJc-Qsve3P/view?usp=sharing",
+    cvUrl: "https://drive.google.com/file/d/1d6TrJ-50oaWC8jQSpfidDTt6pBY_xftg/view?usp=sharing",
 };
 
 export const socials = [
@@ -79,11 +79,21 @@ export const projects = [
         id: 5,
         title: "Evergreen",
         description:
-            "Plataforme basada en IA para facilitar que una persona pueda plantar un árbol. Proyecto con el que ganamos Guadalahacks 2024.",
+            "Plataforma basada en IA para facilitar que una persona pueda plantar un árbol. Proyecto con el que ganamos Guadalahacks 2024.",
         tags: ["OpenCV", "Yolo", "streamlit", "Pandas", "Numpy"],
         demoUrl: "https://devpost.com/software/ever-green-qt89uf",
         repoUrl: "https://github.com/han-lovers/evergreen",
         image: "/small.png",
         hasAward: true,
+    },
+    {
+        id: 6,
+        title: "Dungeons&Dragons",
+        description:
+            "Juego de Dungeons&Dragons basado en texto completamente funcional. Construido desde 0 con C++ sin stl.",
+        tags: ["C++", "Data structures", "Algorithms"],
+        demoUrl: "https://github.com/leopalatto20/Dungeons_And_Dragons",
+        repoUrl: "https://github.com/leopalatto20/Dungeons_And_Dragons",
+        image: "/dd.png",
     },
 ];
