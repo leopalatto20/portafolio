@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export const profile = {
     name: "Leonardo Pérez",
     title: "Desarrollador fullstack",
+    cvUrl: "https://drive.google.com/file/d/1gXxdp0Yw2ghNAOAy5P9RDKiJc-Qsve3P/view?usp=sharing",
 };
 
 export const socials = [
@@ -33,6 +34,7 @@ export const projects = [
         demoUrl: "https://devpost.com/software/beholder-smart-parental-control",
         repoUrl: "https://github.com/han-lovers/beholder",
         image: "/medium.png",
+        hasAward: true,
     },
     {
         id: 2,
@@ -60,6 +62,7 @@ export const projects = [
         demoUrl: "#",
         repoUrl: "https://github.com/han-lovers/IdentifEye",
         image: "/IMG_0571.jpg",
+        hasAward: true,
     },
     {
         id: 4,
@@ -81,5 +84,6 @@ export const projects = [
         demoUrl: "https://devpost.com/software/ever-green-qt89uf",
         repoUrl: "https://github.com/han-lovers/evergreen",
         image: "/small.png",
+        hasAward: true,
     },
 ];

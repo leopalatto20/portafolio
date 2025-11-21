@@ -1,6 +1,6 @@
 import { projects } from '../data';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Trophy } from 'lucide-react';
 
 export default function Projects() {
     return (
@@ -19,12 +19,18 @@ export default function Projects() {
                             viewport={{ once: true }}
                             className="group relative overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-600 transition-colors"
                         >
-                            <div className="aspect-video overflow-hidden">
+                            <div className="aspect-video overflow-hidden relative">
                                 <img
                                     src={project.image}
                                     alt={project.title}
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                                 />
+                                {project.hasAward && (
+                                    <div className="absolute top-2 right-2 bg-yellow-500/90 text-black px-2 py-1 rounded-md flex items-center gap-1 text-xs font-bold shadow-lg backdrop-blur-sm">
+                                        <Trophy size={12} />
+                                        <span>Hackaton Winner</span>
+                                    </div>
+                                )}
                             </div>
                             <div className="p-6">
                                 <h4 className="text-xl font-bold mb-2">{project.title}</h4>

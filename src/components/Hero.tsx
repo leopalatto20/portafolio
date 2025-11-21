@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { profile } from '../data';
 import * as THREE from 'three';
+import { FileText } from 'lucide-react';
 
 function AnimatedSphere(props: any) {
     const mesh = useRef<THREE.Mesh>(null!);
@@ -62,6 +63,15 @@ export default function Hero() {
                     <h2 className="text-2xl md:text-4xl text-gray-300 font-light mb-6">
                         {profile.title}
                     </h2>
+                    <a
+                        href={profile.cvUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full backdrop-blur-sm transition-all hover:scale-105 text-white font-medium"
+                    >
+                        <FileText size={20} />
+                        <span>Descargar CV</span>
+                    </a>
                 </motion.div>
             </div>
 
