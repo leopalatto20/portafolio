@@ -1,0 +1,51 @@
+Name: Leonardo Pérez Palatto
+Phone: +52 5627452471
+email: leopalatto20@gmail.com 
+linkedin: https://www.linkedin.com/in/leonardo-perez-palatto/?isSelfProfile=true
+github: https://github.com/leopalatto20
+University: Tecnologico de Monterrey campus ciudad de mexico
+Studying: computer science with a cybersecurity focus August 2023 - July 2027
+Relevant courses: Software development, Data Structures and Algorithms, Object-
+Oriented Programming, Security integration in networks and systems, Cybersecurity.
+My three main focuses: Software engineering, Networks and Cybersecurity(My actual goal would be to work in cybersecurity or SWE).
+
+Professional experience:
+Lacoste - IT Intern - April 2026 - Present
+- I develop web and desktop apps to automate and abstract manual processes across areas, interacting with the ERP and CRM directly. 
+- I attend technical incidents regarding broken/down services that affect other areas in their operations, working directly with the french team.
+- I manage the Mexico's data implementation for the global Business Intelligence platform (Qliksense), I develop the needed interfaces and offer workshops in Mexico on how to use the tool for non technical users.
+
+Tec de Monterrey - Programming advisor - August 2025 - July 2026
+- I offered help for students from different majors that struggled with coding subjects.
+- Helped with basic programming subjects (python) all the way up to Data Structures and algorithms in C++.
+
+Projects: 
+BarbAttack - August 2026 (Currently working on this with Lyft)
+- Threat intelligence platform made to ingest vulnerability and attack feeds, compare them against the companies asset list and prioritize them.
+- Takes things like the companies current objectives and asset priority to get a realistic AI recommendation.
+- The recommendation gets sent directly to the asset responsible and a member of the security team via slack, this same reports are reflected in a web dashboard in real time.
+
+BarBienestar - July 2026(Worked with data2 https://www.data2.ai/)
+- Followed the entire SDLC cycle formally from beggining to end including a business proposal.
+- Real time medicine stock follow-up for the public health system in Mexico, including IMSS and ISSTE  clinics.
+- Allowed the users to create reports for sold out medicines so that other public health service users dont waste time on those same clinics. 
+
+BarbOfraud - December 2025 (Worked with red por la ciberseguridad https://redporlaciberseguridad.org/)
+- Fraud prevention mobile app, users can report and search for frauds inside different apps like facebook marketplace or even email.
+- Implemented the physical network that the app runs over from scratch with vlans, access lists and ospf dynamic routing.
+- Users are able to like, comment, create and search reports.
+
+Beholder - August 2025 - HackPuebla, Challenge for Syntax (https://www.syntax.com/) (Won the hackathon)
+- Won the Syntax Challenge at HackPuebla 2025 by developing an AI-powered parental control system.
+- Built a client application to monitor the child's chat interactions when playing.
+- Sends alerts and screenshots on real time to a parent monitored dashboard when suspicious interactions are detected.
+- Force quits the game on the client computer when the kids keep ignoring the risks.
+
+Identify - Oct 2024 - HackMX, Challenge for Liverpool (Won the hackathon)
+- Won the Liverpool challenge by creating an embedding based catalogue product search with builtin recommendations.
+- Achieved sub-second matching inside a catalogue with more than 70k images via parallelism and concurrency.
+- Created ai powered recommendations for each search with AI to take things like color and product group into account.
+
+
+Tools technologies and skills:
+Claude Code, Pi coding agent, Google cloud platform, AWS, ServiceNow, Jira, Docker, Git, SAP, Confluence, SQL, NoSQL, Redis, Linux, Kafka, RabbitMQ, English(C1) and Spanish Native, teamwork, problem solving, responsiblity, problem solving, cybersecurity and business understanding, Firebase, React Native and Native development.
