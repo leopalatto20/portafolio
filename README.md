@@ -1,43 +1,37 @@
-# Astro Starter Kit: Minimal
+# Leonardo Pérez Palatto — Portfolio
+
+Bilingual portfolio built with Astro. English: `/`. Spanish: `/es/`.
+
+## Development
 
 ```sh
-bun create astro@latest -- --template minimal
+bun install
+bun run astro dev --background
+bun run astro dev status
+bun run astro dev logs
+bun run astro dev stop
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The development URL is `http://localhost:4321/`.
 
-## 🚀 Project Structure
+## Build
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+bun run build
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The existing Vercel adapter produces deployment output in `.vercel/output/`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Content
 
-Any static assets, like images, can be placed in the `public/` directory.
+- `information.txt`: owner-supplied factual source; preserve it.
+- `src/data/portfolio.ts`: shared English and Spanish content.
+- `src/components/Portfolio.astro`: page structure, native project disclosures, and locale/anchor enhancement.
+- `src/styles/global.css`: responsive styles and reduced-motion behavior.
+- `public/cv/CV_LeonardoPerez.pdf`: downloadable placeholder CV. Replace its contents at the same path when the updated CV is ready. Both locales use it.
+- `public/fonts/`: locally served open-source fonts and licenses.
+- `public/assets/plates/`: authored visual assets with embedded provenance.
 
-## 🧞 Commands
+Projects use native `<details>` so core content and interaction work without JavaScript. The optional script opens direct project anchors and preserves expanded projects when switching languages.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Design decisions are in `PORTFOLIO_BRIEF.md` and `DESIGN.md`; the development-only surface contract and review evidence are under `.impeccable/`.

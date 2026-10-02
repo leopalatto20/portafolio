@@ -46,4 +46,6 @@ pnpm-debug.log*
 **/.impeccable/live/pending-manual-edits.json
 **/.impeccable/live/deferred-svelte-component-accepts.json
 **/.impeccable/live/*.png
+**/.impeccable/build/*.png
 # impeccable-ignore-end
+.lavish/
