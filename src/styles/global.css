@@ -101,7 +101,7 @@ svg { flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-li
 .permalink { display: inline-block; margin-top: 16px; font-size: 15px; text-decoration-color: var(--accent); }
 .project-body { margin: 0 2.65% 0 15.85%; padding-bottom: 32px; }
 .project-body-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.project-body-heading .collaborator,.project-body-heading .permalink { margin: 8px 0; }
+.project-body-heading .permalink { margin: 8px 0; }
 .project-flow { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); padding: 16px 0 0; margin: 0; gap: 28px; list-style-position: inside; border-top: 1px solid var(--accent); }
 .project-flow li { font-variant-numeric: tabular-nums; min-width: 0; }
 .project-flow strong { display: inline; font-size: 18px; font-weight: 600; }

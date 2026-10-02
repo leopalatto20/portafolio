@@ -39,7 +39,7 @@ const base = locale === 'es' ? '/es/' : '/';
       return <details class:list={['project', {'featured': index === 0}]} id={project.id} open={index === 0}>
         <summary>
           <span class="project-date"><span class="project-number">{String(index+1).padStart(2,'0')}</span><span class="date">{p.date}</span>{p.status && <span class="status">{p.status}</span>}</span>
-          <span class="project-name"><h3>{project.name}</h3>{index === 0 && p.collaborator && <span class="collaborator">{p.collaborator}</span>}</span>
+          <span class="project-name"><h3>{project.name}</h3>{p.collaborator && <span class="collaborator">{p.collaborator}</span>}</span>
           <span class="project-summary">{p.summary}</span>
           <span class="project-domain">{p.domain}</span>
           <span class="disclosure"><span class="when-closed">{t.expand}<svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M2 8h12M8 2v12" /></svg></span><span class="when-open">{t.close}<svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M2 8h12" /></svg></span></span>
@@ -48,7 +48,7 @@ const base = locale === 'es' ? '/es/' : '/';
           <div class="featured-body"><h4>{t.how}</h4><div class="mechanism"><img src="/assets/plates/mechanism.png" alt="" width="2172" height="302" /><ol>{p.steps.map(([title, text]) => <li><strong>{title}</strong><span>{text}</span></li>)}</ol></div></div>
           <details class="project-notes"><summary>{locale === 'es' ? 'Contexto, mi trabajo y estado del proyecto' : 'Project context, my work & status'}<svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="m3 6 5 5 5-5" /></svg></summary><div class="project-copy"><div><h4>{t.problem}</h4><p>{p.problem}</p></div><div><h4>{t.contribution}</h4><p>{p.work}</p></div><div><h4>{t.result}</h4><p>{p.result}</p><a class="permalink" href={'#'+project.id} aria-label={t.projectLink+' '+project.name}>{t.projectLink}</a></div></div></details>
         </> : <div class="project-body">
-          <div class="project-body-heading"><p class="collaborator">{p.collaborator}</p><a class="permalink" href={'#'+project.id} aria-label={t.projectLink+' '+project.name}>{t.projectLink}</a></div>
+          <div class="project-body-heading"><a class="permalink" href={'#'+project.id} aria-label={t.projectLink+' '+project.name}>{t.projectLink}</a></div>
           <div class="project-copy"><div><h4>{t.problem}</h4><p>{p.problem}</p></div><div><h4>{t.contribution}</h4><p>{p.work}</p></div><div><h4>{t.result}</h4><p>{p.result}</p></div></div>
           <h4 class="flow-heading">{t.how}</h4><ol class="project-flow">{p.steps.map(([title,text])=><li><strong>{title}</strong><span>{text}</span></li>)}</ol>
         </div>}
