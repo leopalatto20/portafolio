@@ -46,7 +46,7 @@ const base = locale === 'es' ? '/es/' : '/';
         </summary>
         {index === 0 ? <>
           <div class="featured-body"><h4>{t.how}</h4><div class="mechanism"><img src="/assets/plates/mechanism.png" alt="" width="2172" height="302" /><ol>{p.steps.map(([title, text]) => <li><strong>{title}</strong><span>{text}</span></li>)}</ol></div></div>
-          <details class="project-notes"><summary>{locale === 'es' ? 'Contexto, mi trabajo y estado del proyecto' : 'Project context, my work & status'}<svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="m3 6 5 5 5-5" /></svg></summary><div class="project-copy"><div><h4>{t.problem}</h4><p>{p.problem}</p></div><div><h4>{t.contribution}</h4><p>{p.work}</p></div><div><h4>{t.result}</h4><p>{p.result}</p><a class="permalink" href={'#'+project.id} aria-label={t.projectLink+' '+project.name}>{t.projectLink}</a></div></div></details>
+          <details class="project-notes"><summary>{t.projectNotes}<svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="m3 6 5 5 5-5" /></svg></summary><div class="project-copy"><div><h4>{t.problem}</h4><p>{p.problem}</p></div><div><h4>{t.contribution}</h4><p>{p.work}</p></div><div><h4>{t.result}</h4><p>{p.result}</p><a class="permalink" href={'#'+project.id} aria-label={t.projectLink+' '+project.name}>{t.projectLink}</a></div></div></details>
         </> : <div class="project-body">
           <div class="project-body-heading"><a class="permalink" href={'#'+project.id} aria-label={t.projectLink+' '+project.name}>{t.projectLink}</a></div>
           <div class="project-copy"><div><h4>{t.problem}</h4><p>{p.problem}</p></div><div><h4>{t.contribution}</h4><p>{p.work}</p></div><div><h4>{t.result}</h4><p>{p.result}</p></div></div>
@@ -63,7 +63,7 @@ const base = locale === 'es' ? '/es/' : '/';
   <section id="education" class="education" aria-labelledby="education-title">
     <h2 id="education-title">{t.educationTitle}</h2>
     <div class="education-layout"><div class="degree"><h3>{t.degree}</h3><p class="degree-focus">{t.degreeFocus}</p><p>{t.school}<br />{t.campus}</p><p class="date">{t.educationDate}</p><h4>{t.coursework}</h4><p>{t.courses}</p></div>
-      <div class="knowledge"><h3>{t.knowledge}</h3><dl>{t.groups.map(group=><div><dt>{group.title}</dt><dd>{group.tools.join(' / ')}</dd></div>)}</dl><div class="working-languages"><h4>{t.languages}</h4><p>{t.languageDetails}</p></div><h4>{t.approachTitle}</h4><p>{t.approach}</p></div>
+      <div class="knowledge"><h3>{t.knowledge}</h3><p>{t.knowledgeIntro}</p><dl>{t.groups.map(group=><div><dt>{group.title}</dt><dd><p>{group.description}</p><span>{group.tools.join(' / ')}</span></dd></div>)}</dl><div class="working-languages"><h4>{t.languages}</h4><p>{t.languageDetails}</p></div><h4>{t.approachTitle}</h4><p>{t.approach}</p></div>
     </div>
   </section>
   <section id="contact" class="contact" aria-labelledby="contact-title"><div><h2 id="contact-title">{t.contactTitle}</h2><p>{t.contactText}</p></div><div class="contact-actions"><a class="email-action" href={'mailto:'+contact.email}>{contact.email}<svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28"><path d="M5 19 19 5M5 5h14v14" /></svg></a><div class="contact-links"><a href={contact.cv} download="CV_LeonardoPerez.pdf">{t.download}<svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4" /></svg></a><a href={contact.linkedin}>LinkedIn</a><a href={contact.github}>GitHub</a></div></div></section>

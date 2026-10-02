@@ -242,3 +242,5 @@ footer a { min-height: 44px; }
 }
 
 .job ul { list-style: disc; }
+
+.knowledge dd p { margin: 0 0 8px; font: inherit; }
