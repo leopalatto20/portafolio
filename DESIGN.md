@@ -85,7 +85,7 @@ Native details/summary supplies multiple independently open projects. Quiet entr
 
 ### Featured mechanism and deeper context
 
-On desktop, the four-node raster carries the artwork while HTML names and descriptions sit below its nodes. On mobile those same steps are numbered, separated by soft inverse rules and fully selectable. A nested native disclosure reveals problem, contribution and result. Its chevron rotates in 180ms ease-out. Supported browsers animate project content block size in 240ms cubic-bezier(.16,1,.3,1); reduced motion removes transitions and animations. No staged entrance is required.
+On desktop, the four-node raster carries the artwork while HTML names and descriptions sit below its nodes. On mobile those same steps are numbered, separated by soft inverse rules and fully selectable. A nested native disclosure reveals problem, contribution and result. Its chevron rotates in 180ms using `--ease-out`. Pointer activation expands and collapses both disclosures with measured height and opacity transitions in `--duration-disclosure` (200ms), using `--ease-out` (`cubic-bezier(0.23,1,0.32,1)`). Rapid activation reverses from the current frame; content remains mounted through exit, then returns to natural height. Reduced motion keeps an opacity fade and removes height motion. Keyboard activation is immediate, and disclosures retain native behavior without JavaScript. No staged entrance is required.
 
 ### Text actions and contact panel
 

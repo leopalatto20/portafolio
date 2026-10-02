@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "src/styles/global.css"
+        ],
+        "createdAt": "2026-10-02T03:03:14.962Z",
+        "reason": "Agent: the explicitly invoked animate skill sanctions measured height transitions for accordions; project disclosures use bounded 200ms transitions, with opacity-only reduced motion, verified on desktop and mobile."
+      }
+    ]
+  }
+}

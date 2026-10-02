@@ -70,10 +70,12 @@ const base = locale === 'es' ? '/es/' : '/';
 </main>
 <footer><span>Leonardo Pérez Palatto</span><a href="#top">{t.back}<svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M12 20V4m-6 6 6-6 6 6" /></svg></a></footer>
 <script>
+  import { enhanceProjectMotion } from '../scripts/project-motion';
+  const motion = enhanceProjectMotion();
   const projectDetails = [...document.querySelectorAll<HTMLDetailsElement>('details.project')];
   const localeLinks = [...document.querySelectorAll<HTMLAnchorElement>('a[data-locale]')];
   const updateLocaleLinks = () => {
-    const open = projectDetails.filter(project=>project.open).map(project=>project.id);
+    const open = projectDetails.filter(project=>motion.isExpanded(project)).map(project=>project.id);
     const hash = location.hash;
     for (const link of localeLinks) {
       const url = new URL(link.dataset.locale === 'es' ? '/es/' : '/',location.origin);
@@ -86,7 +88,7 @@ const base = locale === 'es' ? '/es/' : '/';
     let id = '';
     try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
     const project = projectDetails.find(project=>project.id===id);
-    if(project) { project.open=true; requestAnimationFrame(()=>project.scrollIntoView({block:'start'})); }
+    if(project) { motion.open(project); requestAnimationFrame(()=>project.scrollIntoView({block:'start'})); }
     updateLocaleLinks();
   };
   const saved = new URLSearchParams(location.search).get('open');
@@ -95,6 +97,7 @@ const base = locale === 'es' ? '/es/' : '/';
     for(const project of projectDetails) project.open=ids.includes(project.id);
   }
   for(const project of projectDetails) project.addEventListener('toggle',updateLocaleLinks);
+  for(const project of projectDetails) project.querySelector(':scope > summary')?.addEventListener('click',()=>queueMicrotask(updateLocaleLinks));
   window.addEventListener('hashchange',openAnchor);
   for(const link of localeLinks) link.addEventListener('click',()=>{
     const currentProject=projectDetails.find(project=>{const rect=project.getBoundingClientRect();return rect.top<=80&&rect.bottom>80;});
